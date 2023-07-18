@@ -12,19 +12,20 @@ class ServerlessWebpackPrisma {
     '!node_modules/.prisma/client/libquery_engine-rhel*',
 
     'node_modules/prisma/libquery_engine*',
-    '!node_modules/prisma/libquery_engine-rhel*',
+    //'!node_modules/prisma/libquery_engine-rhel*',
 
     'node_modules/@prisma/engines/libquery_engine*',
-    '!node_modules/@prisma/engines/libquery_engine-rhel*',
+    //'!node_modules/@prisma/engines/libquery_engine-rhel*',
 
-    'node_modules/@prisma/engines/migration-engine*',
-    '!node_modules/@prisma/engines/migration-engine-rhel*',
+    //'node_modules/@prisma/engines/migration-engine*',
+    //'!node_modules/@prisma/engines/migration-engine-rhel*',
+    'node_modules/@prisma/engines/schema-engine*',
 
     'node_modules/@prisma/engines/prisma-fmt*',
-    '!node_modules/@prisma/engines/prisma-fmt-rhel*',
+    //'!node_modules/@prisma/engines/prisma-fmt-rhel*',
 
     'node_modules/@prisma/engines/introspection-engine*',
-    '!node_modules/@prisma/engines/introspection-engine-rhel*',
+    //'!node_modules/@prisma/engines/introspection-engine-rhel*',  
   ];
 
   constructor(serverless, options) {
